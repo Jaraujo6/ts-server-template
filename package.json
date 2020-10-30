@@ -1,0 +1,53 @@
+{
+  "name": "ts-server-template",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "14.15.0"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "format": "prettier --write --ignore-unknown",
+    "format-check": "prettier --check .",
+    "lint": "eslint . --cache --fix",
+    "lint-check": "eslint . --cache",
+    "start": "tsnd --respawn --transpile-only app/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaraujo6/ts-server-template.git"
+  },
+  "author": "jaraujo6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaraujo6/ts-server-template/issues"
+  },
+  "homepage": "https://github.com/Jaraujo6/ts-server-template#readme",
+  "dependencies": {
+    "axios": "0.21.0",
+    "pino": "6.7.0"
+  },
+  "devDependencies": {
+    "@types/pino": "6.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "7.12.1",
+    "eslint-config-prettier": "6.15.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.0",
+    "prettier": "2.1.2",
+    "ts-node-dev": "1.0.0",
+    "typescript": "4.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.ts": "eslint --cache --fix"
+  }
+}
