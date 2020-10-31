@@ -1,8 +1,8 @@
-# Template TS Node Server
+# Template TS Fastify REST Server
 
 ## Use Case
 
-When you are making a server on Node 14
+When you are making a fastify server on Node 14 with MongoDB and TypeORM
 
 ## Libraries Used
 
@@ -11,3 +11,6 @@ When you are making a server on Node 14
 - Eslint: Linter
 - Prettier: Formatting
 - Pino: Logging
+- Fastify: Server
+- MongoDB: DB
+- TypeORM: DB Object Relational Mapper
