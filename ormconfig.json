@@ -1,0 +1,17 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "johnnys-db",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["app/entity/**/*.ts"],
+  "migrations": ["app/migration/**/*.ts"],
+  "subscribers": ["app/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "app/entity",
+    "migrationsDir": "app/migration",
+    "subscribersDir": "app/subscriber"
+  },
+  "useUnifiedTopology": true
+}
