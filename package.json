@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/Jaraujo6/ts-server-template#readme",
   "dependencies": {
-    "axios": "0.21.0",
     "pino": "6.7.0"
   },
   "devDependencies": {

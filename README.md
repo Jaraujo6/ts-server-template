@@ -11,4 +11,3 @@ When you are making a server on Node 14
 - Eslint: Linter
 - Prettier: Formatting
 - Pino: Logging
-- Axios: XHR Calls
