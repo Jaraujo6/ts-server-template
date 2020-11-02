@@ -14,3 +14,8 @@ When you are making a fastify server on Node 14 with MongoDB and TypeORM
 - Fastify: Server
 - MongoDB: DB
 - TypeORM: DB Object Relational Mapper
+
+## Resources
+
+- [Working with MongoDB in TypeOrm](https://typeorm.io/#/mongodb)
+- [Fastify Typescript Docs](https://www.fastify.io/docs/latest/TypeScript/)
